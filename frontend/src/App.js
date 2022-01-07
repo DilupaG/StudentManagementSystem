@@ -1,10 +1,22 @@
 import './App.css';
+import AddStudent from './components/AddStudent';
+import Header from './components/Header';
+import {BrowserRouter, Routes, Route} from "react-router-dom"
 
 function App() {
   return (
-    <div className="App">
-      <h1> Hello React ! </h1>
-    </div>
+    
+     
+      <div>
+        <Header/>
+        <BrowserRouter>
+        <Routes>
+          <Route path="/add" exact element={<AddStudent/>}/> 
+    
+        </Routes>
+        </BrowserRouter>
+      </div>
+       
   );
 }
 
