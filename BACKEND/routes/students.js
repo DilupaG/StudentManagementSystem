@@ -20,7 +20,7 @@ router.route("/add").post((req,res)=>{
         gender
     })
 
-    //pasing data to the database through the Student schema.(class ekakin db ekata dta pass karanaa wage). then sucess msg 
+    //pasing data from backend to the database through the Student schema.(class ekakin db ekata dta pass karanaa wage). then sucess msg 
     newStudent.save().then(()=>{
         res.json("Student Added")
     }).catch((err)=>{           //else console the error
